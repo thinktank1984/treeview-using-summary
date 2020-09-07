@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+	<!-- <div id="app"></div>
+
+	<script src="src/index.js">
+	</script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+<script src="simple-image.js"></script>
+<link href="simple-image.css" rel="stylesheet"/>
+
+<div id="editorjs"></div>
+
+<script>
+	const editor = new EditorJS({
+		autofocus: true,
+		ogLevel: 'VERBOSE',
+		tools: {
+			image: SimpleImage,
+		},
+		onReady: () => {
+      console.log('Editor.js is ready to work!')
+   }
+	});
+</script>
+
+
+
+</body>
+
+</html>
